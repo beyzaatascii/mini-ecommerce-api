@@ -1,0 +1,13 @@
+# prometheus.yml
+
+global:
+  scrape_interval: 15s # Her 15 saniyede bir metrikleri topla
+
+scrape_configs:
+  - job_name: 'api-gateway' # Nginx metrikleri
+    static_configs:
+      - targets: ['api-gateway:9113'] # Nginx Prometheus Export'u (Eklenecek)
+  
+  - job_name: 'python-services' # Python servisleri
+    static_configs:
+      - targets: ['product-service:8000', 'user-service:8001'] # Metrik portları
