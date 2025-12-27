@@ -37,7 +37,7 @@ services:
 
       REDIS_HOST: redis   # Redis ekledik
     ports:
-      - "5000:5002"
+      - "5002:5000"
     depends_on:
       - db
       - redis
