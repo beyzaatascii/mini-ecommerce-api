@@ -248,4 +248,4 @@ if __name__ == '__main__':
     except:
         print("Metrics server already running or failed", file=sys.stdout)
 
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5002)
