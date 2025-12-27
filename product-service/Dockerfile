@@ -18,7 +18,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Uygulama kodunu kopyala
 COPY . .
 
-EXPOSE 5000
+EXPOSE 5002
 
 # CMD, uygulamayı başlatır
 CMD ["python", "app.py"]
