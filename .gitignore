@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+
+.env
+.env.*
+
+# Docker volumes
+postgres_data/
+grafana_data/
+
+*.log
